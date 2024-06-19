@@ -57,5 +57,4 @@ class FeedforwardNetwork(nn.Module):
     def forward(self, x):
         return self.linear2(self.dropout(F.relu(self.linear1(x)))
 
-class MultiHeadAttention(nn.Module):
 
